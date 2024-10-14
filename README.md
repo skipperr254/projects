@@ -24,3 +24,21 @@
     3. create and add the product image, name, price and brand
     4. style the prducts and the product
     5. add more products (ctrl-c ctrl-v)
+
+4. Dynamic home page
+    1. create a data.js file
+    2. export an array of 6 products
+    3. create js file to handle dynamic products rendering
+    4. create screens/HomeScreen.js
+    5. export HomeScreen as an object with a render method
+    6. implement render() and return products mapped to appropriate html
+    7. create app.js
+    8. link to index.html as module
+    9. set main id to main container
+    10. create router() function
+    11. set main container innerHTML to HomeScreen.render()
+    12. set load event of window to router()
+
+## URL Routing
+1. create routes as route: screen object
+2. create utils.js
