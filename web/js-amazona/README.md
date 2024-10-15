@@ -42,3 +42,14 @@
 ## URL Routing
 1. create routes as route: screen object
 2. create utils.js
+
+## Create a Node.JS server
+1. run npm init in the root folder
+2. npm install express
+3. create server.js
+4. add start command as node backend/server.js
+5. require express
+6. move data.js from frontend to backend
+7. create router for api/products
+8. return products in data.js
+9. run npm start

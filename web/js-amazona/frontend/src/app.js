@@ -11,12 +11,12 @@ const routes = {
 
 const router = () => {
     const request = parseRequestURL()
-    const parseURL = (request.resource ? `/${request.resource}` : "/") +
+    const parseURL =
+        (request.resource ? `/${request.resource}` : "/") +
         (request.id ? "/:id" : "") +
         (request.verb ? `/${request.verb}` : "");
 
     const screen = routes[parseURL] || Error404Screen;
-    console.log(request)
     const root = document.querySelector("#root");
     root.innerHTML = screen.render();
 }
