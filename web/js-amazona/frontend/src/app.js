@@ -9,7 +9,7 @@ const routes = {
     "/product/:id": ProductScreen
 }
 
-const router = () => {
+const router = async () => {
     const request = parseRequestURL()
     const parseURL =
         (request.resource ? `/${request.resource}` : "/") +
@@ -18,7 +18,7 @@ const router = () => {
 
     const screen = routes[parseURL] || Error404Screen;
     const root = document.querySelector("#root");
-    root.innerHTML = screen.render();
+    root.innerHTML = await screen.render();
 }
 
 window.addEventListener('load', router);
