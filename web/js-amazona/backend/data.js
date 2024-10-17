@@ -7,7 +7,7 @@ export default {
             image: "images/product-1.png",
             price: 49,
             brand: "New Balance",
-            rating: 4.7,
+            rating: 4.5,
             numberOfReview: 16,
             amountInStock: 19
         },
@@ -18,8 +18,8 @@ export default {
             image: "images/product-1.png",
             price: 59,
             brand: "New Balance",
-            rating: 4.7,
-            numberOfReview: 16,
+            rating: 2.5,
+            numberOfReview: 300,
             amountInStock: 19
         },
         {
@@ -29,8 +29,8 @@ export default {
             image: "images/product-1.png",
             price: 50,
             brand: "New Balance",
-            rating: 4.7,
-            numberOfReview: 16,
+            rating: 1.5,
+            numberOfReview: 13,
             amountInStock: 19
         },
         {
@@ -40,8 +40,8 @@ export default {
             image: "images/product-1.png",
             price: 78,
             brand: "New Balance",
-            rating: 4.7,
-            numberOfReview: 16,
+            rating: 3.5,
+            numberOfReview: 21,
             amountInStock: 19
         },
         {
@@ -51,8 +51,8 @@ export default {
             image: "images/product-1.png",
             price: 34,
             brand: "New Balance",
-            rating: 4.7,
-            numberOfReview: 16,
+            rating: 4,
+            numberOfReview: 10,
             amountInStock: 19
         },
         {
@@ -62,8 +62,8 @@ export default {
             image: "images/product-1.png",
             price: 12,
             brand: "New Balance",
-            rating: 4.7,
-            numberOfReview: 16,
+            rating: 5,
+            numberOfReview: 1600,
             amountInStock: 19
         }
     ]

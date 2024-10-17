@@ -110,3 +110,16 @@
 3. Prettier - code formatter
 4. HTML & LESS grammar injections
 5. CSS Peek
+
+## Create a rating component
+
+1. create components/Rating.js
+2. create div.rating
+3. link to fontawesome.css in index.html
+4. define Rating object with render
+5. if !props.value return empty div
+6. else us fa fa-star, fa-star-half-o fa-star-o
+7. last span for props.text || ''
+8. style div.rating, last span and span
+9. edit HomeSreen
+10. add div.product-rating and use Rating component
