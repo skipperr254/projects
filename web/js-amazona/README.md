@@ -75,3 +75,11 @@
     [special] if not serving, move files to the public folder for it to work
 10. npm install axios
 11. change fetch to axios in HomeScreen
+
+## Babel for ES6 in backend
+1. npm install -D babel core cli node preset-env
+2. create .babelrc and set presets to @babel/preset-env
+3. npm install -D nodemon
+4. set start: nodemon --watch backend --exec babel-node backend/server.js
+5. conver require to import in server.js
+6. npm start
