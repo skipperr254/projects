@@ -5,19 +5,19 @@ const HomeScreen = {
         // const { products } = data;
 
         const response = await axios({
-            url: "http://localhost:5000/api/products",
+            url: 'http://localhost:5000/api/products',
             headers: {
-                'Content-Type': 'application/json'
-            }
+                'Content-Type': 'application/json',
+            },
         });
 
-        if (!response || response.statusText !== "OK") return `<h1>Error! Could not fetch data. Something went wrong!</h1>`;
+        if (!response || response.statusText !== 'OK') return '<h1>Error! Could not fetch data. Something went wrong!</h1>';
 
         const products = response.data;
 
         return `
         <div class="products">
-            ${products.map(product => (
+            ${products.map((product) => (
             `
                 <div class="product">
                     <a class="product-img" href="/#/product/${product._id}">
@@ -36,10 +36,10 @@ const HomeScreen = {
                     </div>
                 </div>
                 `
-        )).join("\n")}
+        )).join('\n')}
         </div>
-        `
-    }
-}
+        `;
+    },
+};
 
 export default HomeScreen;

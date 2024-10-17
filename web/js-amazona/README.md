@@ -77,9 +77,20 @@
 11. change fetch to axios in HomeScreen
 
 ## Babel for ES6 in backend
-1. npm install -D babel core cli node preset-env
+1. npm install -D @babel/core @babel/cli @babel/node @babel/preset-env
 2. create .babelrc and set presets to @babel/preset-env
 3. npm install -D nodemon
 4. set start: nodemon --watch backend --exec babel-node backend/server.js
-5. conver require to import in server.js
+5. convert require to import in server.js
 6. npm start
+
+## Enable code linting(eslint)
+1. npm install -D eslint
+2. install VSCode eslint extension
+3. create .eslintrc and set module.exports for env to node
+4. set VSCode setting for editor.codeActionsOnSave source.fixAll.eslint to true
+5. check result for linting error
+6. npm install eslint-config-airbnb-base and eslint-plugin-import 
+7. set extends to airbnb base
+8. set parserOptions to ecmaVersion 11 and sourceType to module
+9. set rules for no-console to 0 ignore linting error
