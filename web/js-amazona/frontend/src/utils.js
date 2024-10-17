@@ -7,4 +7,4 @@ export const parseRequestURL = () => {
         id: request[2],
         action: request[3]
     }
-}
+};

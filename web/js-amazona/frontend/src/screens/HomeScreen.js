@@ -18,7 +18,7 @@ const HomeScreen = {
         return `
         <div class="products">
             ${products.map((product) => (
-            `
+        `
                 <div class="product">
                     <a class="product-img" href="/#/product/${product._id}">
                         <img src="${product.image}" alt="Product 1">
@@ -36,7 +36,7 @@ const HomeScreen = {
                     </div>
                 </div>
                 `
-        )).join('\n')}
+    )).join('\n')}
         </div>
         `;
     },
