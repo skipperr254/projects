@@ -1,0 +1,11 @@
+{
+  "name": "sha256",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "start": "live-server"
+  },
+  "author": "",
+  "license": "ISC"
+}

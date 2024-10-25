@@ -87,7 +87,7 @@ class Blockchain():
 
 		# First make sure the dictionary is ordered to avoid inconsistent hashes
 		block_string = json.dumps(block, sort_keys=True).encode()
-		retrn hashlib.sha256(block_string).hexdigest()
+		return hashlib.sha256(block_string).hexdigest()
 
 	@property
 	def last_block(self): # returns the last block in the chain
